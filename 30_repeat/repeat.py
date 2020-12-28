@@ -18,3 +18,11 @@ def repeat(phrase, num):
         >>> repeat('abc', 'nope') is None
         True
     """
+    if not type(num) == int or num < 0:
+        return None
+
+    result = ""
+    for n in range(0, num):
+        result += phrase
+    
+    return result
